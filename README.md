@@ -1,2 +1,0 @@
-# javascriptPractise
-tricks and tips
