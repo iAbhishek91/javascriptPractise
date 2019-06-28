@@ -4,7 +4,7 @@ console.log(this);
 function func1 () {
   console.log('------------------------------------------');
   console.log(global === this);
-  console.log(this);
+  // ''[[[[[[[[[[[[[[[=[=[=[[=[=['console.log(this);
 
   // inner function
   function innerFunc (self) {

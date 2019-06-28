@@ -1,6 +1,6 @@
 // implicit binding lost
 
-global.a = "I am global";
+// global.a = "I am global";
 
 function myFunc1 () {
   console.log(this.a);
@@ -12,13 +12,16 @@ const myObj1 = {
 }
 
 // reference to other object
-const myFunc1Ref = myObj1.func;
+const myFunc1Ref1 = myObj1.func;
+const myFunc1Ref2 = myFunc1;
 
-myFunc1Ref();
+myObj1.func();
+myFunc1Ref1();
+myFunc1Ref2();
 
 // call back function
-function myFunc2 (callback) {
-  callback();
-}
+// function myFunc2 (callback) {
+//   callback();
+// }
 
-myFunc2(myObj1.func);
+// myFunc2(myObj1.func);

@@ -23,8 +23,11 @@ const obj2 = {
 }
 
 function greetGoodMorning () {
-  console.log(`Good Morning ${this.name.toUpperCase()}`);
+  console.log(this);
+  console.log(`Good Morning ${this.name}`);
 }
 
-greetGoodMorning.call(obj1);
-greetGoodMorning.apply(obj2);
+// greetGoodMorning();
+// greetGoodMorning.apply(obj1);
+const kate = greetGoodMorning.bind(obj2);
+kate();

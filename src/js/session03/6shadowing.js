@@ -12,3 +12,7 @@ b1.propNew = 'prop added';
 
 console.log(b1);
 console.log(b1.__proto__);
+
+// a1.prop1 = 'prop1 updated';
+// console.log(b1);
+// console.log(b1.__proto__);

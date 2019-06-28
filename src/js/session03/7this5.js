@@ -5,6 +5,11 @@ function myFunc1 () {
   console.log(this.b);
 }
 
-var a = 10; // not binded to global object
-// global.a = a;
+// console.log(this); // not binded to global object
+var a = 10;
+global.a = a;
+
+
+
+
 myFunc1();
