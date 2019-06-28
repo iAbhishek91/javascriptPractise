@@ -3,7 +3,7 @@ const promise = new Promise((resolve, reject) => {
   if (a > 10) {
     resolve('resolved');
   }
-  throw new Error('error occured');
+  reject('error occured');
 });
 
 promise.then(data => console.log()).catch((e) => console.log(e.message));

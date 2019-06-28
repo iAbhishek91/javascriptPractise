@@ -1,5 +1,5 @@
 const promiseObj = new Promise((resolve, reject) => {
-  if (false) resolve('resolved');
+  if (true) resolve('resolved');
   reject('rejected');
 });
 
