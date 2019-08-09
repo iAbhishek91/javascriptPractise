@@ -12,9 +12,9 @@ const abhi = {
 }
 
 const {
-  home: {flatNo:f },
+  home: {flatNo },
   parking: {slotNo:s },
 } = abhi.address
 
-console.log(f);
+console.log(flatNo);
 console.log(s);
