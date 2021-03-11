@@ -16,3 +16,11 @@ const promiseObj = new Promise((resolve, reject) => {
 promiseObj
   .then(data => console.log(data))
   .catch(err => console.log(err));
+
+
+a = [10, 20 ,30]
+
+b = a.forEach(e => e+100)
+
+console.log(b)
+console.log(a)

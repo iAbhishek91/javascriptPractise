@@ -7,8 +7,9 @@ var a1 = {
 };
 
 var b1 = Object.create(a1);
-// console.log(a1.__proto__);
-// console.log(b1.__proto__);
+console.log(a1.__proto__);
+console.log(b1);
+
 
 // -----------------------------------------
 function a2 () {
@@ -18,5 +19,5 @@ function a2 () {
   this.f = () => {}
 }
 
-module.exports.request = new a2();
+console.log(new a2());
 
